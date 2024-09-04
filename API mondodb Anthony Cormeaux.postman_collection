@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "07909119-c6fc-49e6-83af-ee74e128dfac",
+		"name": "API mondodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31961525"
+	},
+	"item": [
+		{
+			"name": "Methods albums",
+			"item": [
+				{
+					"name": "Create album",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"MyAlbum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/album/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"album",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all albums",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"MyAlbum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/albums/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"albums",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get album by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"MyAlbum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/album/66d82591d28f2587309bfb0c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"album",
+								"66d82591d28f2587309bfb0c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete album by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"MyAlbum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/album/66d72369254171d177949dbd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"album",
+								"66d72369254171d177949dbd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\" : \"test update\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/album/66d82591d28f2587309bfb0c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"album",
+								"66d82591d28f2587309bfb0c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Methods photos",
+			"item": [
+				{
+					"name": "Create photo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\" : \"https://www.efrei.fr/presse-room2/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/album/66d82591d28f2587309bfb0c/photo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"album",
+								"66d82591d28f2587309bfb0c",
+								"photo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Udate by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\" : \"https://www.efrei.fr/presse-room/\",\r\n    \"description\" : \"logo de l'efrei\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/album/66d82591d28f2587309bfb0c/photo/66d8267bd28f2587309bfb11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"album",
+								"66d82591d28f2587309bfb0c",
+								"photo",
+								"66d8267bd28f2587309bfb11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all by album",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\" : \"https://www.efrei.fr/presse-room/\",\r\n    \"description\" : \"logo de l'efrei\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/album/66d82591d28f2587309bfb0c/photos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"album",
+								"66d82591d28f2587309bfb0c",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\" : \"https://www.efrei.fr/presse-room/\",\r\n    \"description\" : \"logo de l'efrei\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/album/66d82591d28f2587309bfb0c/photo/66d8275a466c90426878b095",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"album",
+								"66d82591d28f2587309bfb0c",
+								"photo",
+								"66d8275a466c90426878b095"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
