@@ -1,4 +1,4 @@
-# Anthony COrmeaux
+# Anthony Cormeaux
 # Osée Ibobi
 
 ___
