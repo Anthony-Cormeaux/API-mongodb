@@ -15,7 +15,7 @@ const Auth = class Auth {
     this.app.get('/auth/', (req, res) => {
       try {
         const { name, role } = req.body
-        const token = jwt.sign({ name, role }, 'webforce3', { expiresIn: '24h' })
+        const token = jwt.sign({ name, role }, process.env.JWT_SECRET, { expiresIn: '24h' })
 
         res.status(200).json({ token })
       } catch (err) {
@@ -30,7 +30,7 @@ const Auth = class Auth {
   }
 
   /**
-   * Run
+   * Run 
    */
   run () {
     this.auth()
