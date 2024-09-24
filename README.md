@@ -109,3 +109,6 @@ Erreur: 400 Bad Request si l'ID est invalide. 500 Internal Server Error en cas d
 Notes
 Authentification: Les endpoints de création, mise à jour et suppression devraient probablement être protégés par une authentification, mais cela dépend de la mise en œuvre spécifique de votre authenticateToken (non montré ici).
 Gestion des erreurs: Les codes d'erreur 400 Bad Request sont utilisés pour les demandes malformées, tandis que les erreurs de serveur internes sont renvoyées avec le code 500.
+
+Update les packets avec nmp audit fix
+Ajout de rate limit
